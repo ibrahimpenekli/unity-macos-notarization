@@ -9,6 +9,15 @@ namespace Inscept.Notarization
 {
     public class Notarization
     {
+        
+        /// <summary>
+        /// Submits built app to the Apple Notary Service for notarization. See <see cref="Notary.Submit"/>.
+        /// </summary>
+        /// <param name="report">The build report.</param>
+        /// <param name="settings">The notarization settings. Default notarization settings will be used if it is left empty.</param>
+        /// <param name="entitlementsOptions">The entitlements file creation options.</param>
+        /// <exception cref="ArgumentNullException">If <paramref name="report"/> is <c>null</c>.</exception>
+        /// <exception cref="NotSupportedException">If build target is not OSX platform.</exception>
         public static void Submit(BuildReport report, NotarizationSettings settings = null, 
             EntitlementsOptions? entitlementsOptions = null)
         {
@@ -67,6 +76,12 @@ namespace Inscept.Notarization
             }
         }
 
+        /// <summary>
+        /// Creates entitlements file needed for code signing process.
+        /// </summary>
+        /// <param name="outputPath">The output path for the build.</param>
+        /// <param name="options">The entitlements file creation options.</param>
+        /// <returns>The entitlements file path.</returns>
         public static string CreateEntitlementsFile(string outputPath, EntitlementsOptions options)
         {
             var entitlementsPath = GetEntitlementsFilePath(outputPath);

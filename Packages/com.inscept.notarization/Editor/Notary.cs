@@ -22,6 +22,21 @@ namespace Inscept.Notarization
             this.entitlementsPath = entitlementsPath;
         }
 
+        /// <summary>
+        /// Submits built app to the Apple Notary Service for notarization.
+        /// These steps will be done one by one:
+        /// <list type="number">
+        /// <item>Code signing</item>
+        /// <item>Notarization</item>
+        /// <item>Stapling</item>
+        /// </list>
+        /// </summary>
+        /// <remarks>
+        /// Notarization is done by communicating with the Apple services.
+        /// So this may take a while to be completed.
+        /// </remarks>
+        /// <param name="buildOutputPath">The output path for the build.</param>
+        /// <exception cref="Exception">If one of shell scripts exited with error code.</exception>
         public void Submit(string buildOutputPath)
         {
             var scripts = new ShellScript[]
