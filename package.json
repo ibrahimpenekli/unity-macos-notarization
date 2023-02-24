@@ -1,0 +1,10 @@
+{
+  "name": "com.inscept.notarization",
+  "displayName": "OSX Notarization",
+  "version": "1.1.1",
+  "unity": "2021.3",
+  "author": "Inscept",
+  "description": "MacOS app notarization for Unity.",
+  "hideInEditor": false,
+  "dependencies": {}
+}
