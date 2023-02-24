@@ -1,13 +1,9 @@
 ﻿using System.Diagnostics;
-using System.IO;
-using UnityEngine;
 
 namespace Inscept.Notarization.Shell
 {
     public abstract class ShellScript
     {
-        private const string PackagePath = "Packages/com.inscept.osx.notary";
-        
         private readonly string _scriptPath;
         private string _args;
         
@@ -16,7 +12,8 @@ namespace Inscept.Notarization.Shell
 
         protected ShellScript(string scriptFile)
         {
-            _scriptPath = Path.Combine(Application.dataPath, PackagePath, "/Editor/Shell/Scripts", scriptFile);
+            var packageInfo = UnityEditor.PackageManager.PackageInfo.FindForAssembly(typeof(Notary).Assembly);
+            _scriptPath = $"{packageInfo.resolvedPath}/Editor/Shell/Scripts/{scriptFile}";
         }
         
         protected void SetArguments(params string[] args)
