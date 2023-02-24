@@ -2,7 +2,7 @@
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 
-namespace Inscept.OSX.Notarization
+namespace Inscept.Notarization
 {
     public class NotaryPostprocessBuild : IPostprocessBuildWithReport
     {

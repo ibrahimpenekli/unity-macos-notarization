@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine.UIElements;
 
-namespace Inscept.OSX.Notarization
+namespace Inscept.Notarization
 {
     public class NotarizationSettingsProvider : SettingsProvider
     {

@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 
-namespace Inscept.OSX.Notarization
+namespace Inscept.Notarization
 {
     public class Notarization
     {

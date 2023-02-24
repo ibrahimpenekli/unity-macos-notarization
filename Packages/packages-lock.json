@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "com.inscept.osx.notary": {
-      "version": "file:com.inscept.osx.notary",
+    "com.inscept.notarization": {
+      "version": "file:com.inscept.notarization",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}

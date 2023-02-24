@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine.Windows;
 
-namespace Inscept.OSX.Notarization.Shell
+namespace Inscept.Notarization.Shell
 {
     public class NotarizeScript : ShellScript
     {

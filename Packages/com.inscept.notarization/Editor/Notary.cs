@@ -1,8 +1,8 @@
 ﻿using System;
-using Inscept.OSX.Notarization.Shell;
+using Inscept.Notarization.Shell;
 using UnityEngine;
 
-namespace Inscept.OSX.Notarization
+namespace Inscept.Notarization
 {
     public class Notary
     {

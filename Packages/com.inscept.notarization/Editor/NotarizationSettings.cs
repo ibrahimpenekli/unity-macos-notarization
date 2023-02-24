@@ -3,7 +3,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace Inscept.OSX.Notarization
+namespace Inscept.Notarization
 {
     [Flags]
     public enum EntitlementsOptions

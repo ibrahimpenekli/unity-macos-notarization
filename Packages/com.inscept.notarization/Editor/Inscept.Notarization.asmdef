@@ -1,6 +1,6 @@
 {
-    "name": "Inscept.Notary",
-    "rootNamespace": "",
+    "name": "Inscept.Notarization",
+    "rootNamespace": "Inscept.Notarization",
     "references": [],
     "includePlatforms": [
         "Editor"

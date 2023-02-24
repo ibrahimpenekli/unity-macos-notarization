@@ -1,4 +1,4 @@
-﻿namespace Inscept.OSX.Notarization.Shell
+﻿namespace Inscept.Notarization.Shell
 {
     public class CodeSignScript : ShellScript
     {

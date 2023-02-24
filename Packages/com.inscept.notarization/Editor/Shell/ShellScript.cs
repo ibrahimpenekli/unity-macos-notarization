@@ -2,7 +2,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace Inscept.OSX.Notarization.Shell
+namespace Inscept.Notarization.Shell
 {
     public abstract class ShellScript
     {
