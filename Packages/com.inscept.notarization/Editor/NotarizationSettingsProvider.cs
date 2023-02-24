@@ -5,7 +5,7 @@ namespace Inscept.Notarization
 {
     public class NotarizationSettingsProvider : SettingsProvider
     {
-        private const string SettingsSectionPath = "Project/OSX Notarization Settings";
+        private const string SettingsSectionPath = "Project/OSX Notarization";
 
         private SerializedObject _settings;
 
