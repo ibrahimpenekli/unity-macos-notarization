@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Inscept.Notarization
 {
-    public class Notarization
+    public class NotarizationUtility
     {
         
         /// <summary>

@@ -4,7 +4,7 @@ using UnityEditor.Build.Reporting;
 
 namespace Inscept.Notarization
 {
-    public class NotaryPostprocessBuild : IPostprocessBuildWithReport
+    public class NotarizationPostprocessBuild : IPostprocessBuildWithReport
     {
         public int callbackOrder => 9999;
 
@@ -18,7 +18,7 @@ namespace Inscept.Notarization
                     var settings = NotarizationSettings.GetOrCreateSettings();
                     if (settings.enableNotarization)
                     {
-                        Notarization.Submit(report, settings);
+                        NotarizationUtility.Submit(report, settings);
                     }
                 }
             }
