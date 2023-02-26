@@ -33,7 +33,7 @@ public class MyPostprocessBuild : IPostprocessBuildWithReport
         {
             if (report.summary.platform == BuildTarget.StandaloneOSX)
             {
-                NotarizationUtility.Submit(outputPath);
+                NotarizationUtility.Submit(report);
             }
         }
     }
